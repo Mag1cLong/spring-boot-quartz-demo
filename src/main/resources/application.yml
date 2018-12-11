@@ -4,6 +4,14 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-    
+  quartz:
+      #数据库方式
+      job-store-type: jdbc
+      #初始化表结构 ALWAYS、EMBEDDED、NEVER
+#      jdbc:
+#        initialize-schema: ALWAYS
 mybatis:
   mapper-locations: classpath:mybatis/*.xml
+
+
+
